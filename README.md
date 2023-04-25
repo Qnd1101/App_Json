@@ -1,5 +1,5 @@
 # App_Json
-
+```
 {
     // 트리모양 나오기
     "dart.previewFlutterUiGuides": true,
@@ -26,3 +26,4 @@
         "editor.wordBasedSuggestions": false
     }
 }
+```
