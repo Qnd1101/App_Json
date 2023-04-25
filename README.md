@@ -1,29 +1,31 @@
-# App_Json
 ```
-{
-    // 트리모양 나오기
-    "dart.previewFlutterUiGuides": true,
+import 'package:flutter/material.dart';
 
-    // 저장시 자동 수정
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    
-    // 들여쓰기 자동 적용하기
-    "editor.formatOnSave": true,
+void main() {
+  runApp(const MyApp());
+}
 
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [
-            80
-        ],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
-    }
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          child: Icon(Icons.add),
+        ),
+        body: Center(
+          child: Text('0'),
+        ),
+      ),
+    );
+  }
 }
 ```
